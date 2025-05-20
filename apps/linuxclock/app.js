@@ -243,8 +243,9 @@ function queueDraw() {
   if (drawTimeout) clearTimeout(drawTimeout);
   drawTimeout = setTimeout(function() {
     drawTimeout = undefined;
+    settings.menuPosX = (settings.menuPosX+1) % menu.length;
     draw();
-  }, 60000 - (Date.now() % 60000));
+  }, 20000 - (Date.now() % 20000));
 }
 
 
