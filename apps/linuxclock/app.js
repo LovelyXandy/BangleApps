@@ -195,9 +195,9 @@ function drawText(key, value, line){
   g.setColor(g.theme.fg);
 
   if(key){
-    key = (key.toLowerCase() + "    ").slice(0, 4) + "|";
+    key = "";
   } else {
-    key = ""
+    key = "";
   }
 
   value = String(value).replace("\n", " ");
