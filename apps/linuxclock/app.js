@@ -143,7 +143,7 @@ function draw() {
   g.setFontUbuntuMono();
   g.setFontAlign(-1, -1);
 
-  g.clearRect(0,24,W,H);
+  g.clearRect(0,20,W,H);
 
   drawMainScreen();
 }
@@ -153,8 +153,8 @@ function draw() {
 function drawMainScreen(){
   // Get menu item based on x
   var menuItem = menu[settings.menuPosX];
-  var cmd = menuItem.name.slice(0,5).toLowerCase();
-  drawCmd(cmd);
+  //var cmd = menuItem.name.slice(0,5).toLowerCase();
+  //drawCmd(cmd);
 
   // Draw menu items depending on our y value
   drawMenuItems(menuItem);
