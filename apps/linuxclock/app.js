@@ -201,7 +201,7 @@ function drawText(key, value, line){
   }
 
   value = String(value).replace("\n", " ");
-  g.drawString(key + value, x, y);
+  g.drawString(value, x, y);
 
 }
 
