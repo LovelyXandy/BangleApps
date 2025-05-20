@@ -143,7 +143,7 @@ function draw() {
   g.setFontUbuntuMono();
   g.setFontAlign(-1, -1);
 
-  g.clearRect(0,20,W,H);
+  g.clearRect(0,24,W,H);
 
   drawMainScreen();
 }
@@ -153,8 +153,8 @@ function draw() {
 function drawMainScreen(){
   // Get menu item based on x
   var menuItem = menu[settings.menuPosX];
-  //var cmd = menuItem.name.slice(0,5).toLowerCase();
-  //drawCmd(cmd);
+  var cmd = menuItem.name.slice(0,5).toLowerCase();
+  drawCmd(cmd);
 
   // Draw menu items depending on our y value
   drawMenuItems(menuItem);
@@ -212,18 +212,18 @@ function drawCmd(cmd){
   var y = 28;
 
   g.setColor("#0f0");
-  g.drawString("bjs", x+c, y);
-  c += g.stringWidth("bjs");
+  //g.drawString("bjs", x+c, y);
+  //c += g.stringWidth("bjs");
 
-  g.setColor(g.theme.fg);
-  g.drawString(":", x+c, y);
-  c += g.stringWidth(":");
+  //g.setColor(g.theme.fg);
+  //g.drawString(":", x+c, y);
+  //c += g.stringWidth(":");
 
-  g.setColor("#0ff");
-  g.drawString("$ ", x+c, y);
-  c += g.stringWidth("$ ");
+  //g.setColor("#0ff");
+  //g.drawString("$ ", x+c, y);
+  //c += g.stringWidth("$ ");
 
-  g.setColor(g.theme.fg);
+  //g.setColor(g.theme.fg);
   g.drawString(cmd, x+c, y);
 }
 
@@ -245,7 +245,7 @@ function queueDraw() {
     drawTimeout = undefined;
     settings.menuPosX = (settings.menuPosX+1) % menu.length;
     draw();
-  }, 20000 - (Date.now() % 20000));
+  }, 30000 - (Date.now() % 30000));
 }
 
 
