@@ -4,7 +4,7 @@
   "shortName": "Kanawatch",
   "version": "0.12",
   "type": "clock",
-  "description": "Learn Hiragana and Katakana",
+  "description": "Learn Hiragana and Katakana edited",
   "icon": "app.png",
   "allow_emulator": true,
   "tags": "clock",
