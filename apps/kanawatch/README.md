@@ -17,7 +17,7 @@ A simple watchface design perfect for learning hiragana and katakana.
 
 ## Author
 
-Written by pancake in 2022, maintained during 2023 and powered by insomnia
+Written by pancake in 2022, maintained during 2023 and powered by insomnia - editee by lovelyxandy
 
 ## Screenshots
 
