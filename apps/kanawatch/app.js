@@ -209,7 +209,7 @@ function render(hhmm) {
   g.setColor(0, 0, 0);
     const whitecolor = color > 3;
     colors[color]();
-    g.fillRect(0, 30, w, h);
+   // g.fillRect(0, 30, w, h);
 
     g.setFont('Vector', 50);
     if (whitecolor) {
@@ -219,13 +219,13 @@ function render(hhmm) {
     }
     x = 26;
     y = h - 42;
-  //  g.drawString(hhmm, x - 3, y - 3);
+    g.drawString(day+'-'+month, x - 3, y - 3);
     if (whitecolor) {
       g.setColor(1, 1, 1);
     } else {
       g.setColor(0, 0, 0);
     }
- //   g.drawString(hhmm, x, y - 1); //commented out time
+ //   g.drawString(day+'-'+month, x, y - 1); //commented out time
   
   drawKana();
   drawMonthDay();
