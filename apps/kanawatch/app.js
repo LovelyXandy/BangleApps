@@ -405,7 +405,7 @@ Bangle.on('swipe', function (x,y) {
   } else if (y > 0) {
     hiraSwipe(-1, 0, !hiramode);
   }
-  render(ohhmm);
+  render(day, month);
 });
 
 g.clear(true);
