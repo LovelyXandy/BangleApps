@@ -219,13 +219,13 @@ function render(hhmm) {
     }
     x = 26;
     y = h - 42;
-    g.drawString(hhmm, x - 3, y - 3);
+  //  g.drawString(hhmm, x - 3, y - 3);
     if (whitecolor) {
       g.setColor(1, 1, 1);
     } else {
       g.setColor(0, 0, 0);
     }
-    g.drawString(hhmm, x, y - 1);
+ //   g.drawString(hhmm, x, y - 1); //commented out time
   
   drawKana();
   drawMonthDay();
@@ -236,9 +236,9 @@ function drawMonthDay() {
   g.setFont('Vector', 20);
   g.setColor(1,1,1);
   g.setFontAlign(-1, -1, 0);
-  g.drawString(month, 4, 112);
+  g.drawString(month, w, 112);
   g.setFontAlign(1, -1, 0);
-  g.drawString(day, w, 112);
+  g.drawString(day, 4, 112);
 }
 
 function getPhoneme(k) {
@@ -419,7 +419,7 @@ Bangle.drawWidgets();
 setInterval(function() {
     // maybe not always necessary
     Bangle.drawWidgets();
-}, 1000 * 60 * 10);
+}, 1000 * 60);
 tickWatch();
 setInterval(tickWatch, 1000 * 60);
 
