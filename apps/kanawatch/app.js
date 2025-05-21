@@ -321,11 +321,11 @@ function hiraPush(d,dx) {
       xpos = 0;
       ypos = 0;
       zpos = 1;
-      render(ohhmm);
+      //render(ohhmm);
       return;
     }
     zpos -= 0.04;
-    render(ohhmm);
+    //render(ohhmm);
     setTimeout(paint, 100);
   }
   setTimeout (paint, 5);
@@ -356,7 +356,7 @@ function hiraSwipe(d,dx, dostuff) {
       guard = false;
       xpos = 0;
       ypos = 0;
-      render(ohhmm);
+      //render(ohhmm);
       return;
     }
     if (dx) {
@@ -364,7 +364,7 @@ function hiraSwipe(d,dx, dostuff) {
     } else {
       ypos -= (4*d);
     }
-    render(ohhmm);
+   // render(ohhmm);
     setTimeout(paint, 5);
   }
   setTimeout (paint, 5);
@@ -405,7 +405,7 @@ Bangle.on('swipe', function (x,y) {
   } else if (y > 0) {
     hiraSwipe(-1, 0, !hiramode);
   }
-  render(day, month);
+  //render(day, month);
 });
 
 g.clear(true);
