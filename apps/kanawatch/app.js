@@ -225,7 +225,7 @@ function render(hhmm) {
     } else {
       g.setColor(0, 0, 0);
     }
- //   g.drawString(day+'-'+month, x, y - 1); //commented out time
+     g.drawString(day+'-'+month, x, y - 1); //commented out time
   
   drawKana();
   drawMonthDay();
