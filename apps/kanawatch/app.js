@@ -203,7 +203,7 @@ function prevColor() {
   }
 }
 
-function render(hhmm) {
+function render(day, month) {
   g.setFontAlign(-1, -1, 0);
   g.setBgColor(0, 0, 0);
   g.setColor(0, 0, 0);
@@ -301,7 +301,7 @@ function tickWatch () {
   if (hhmm !== ohhmm) {
     ohhmm = hhmm;
     randKana();
-    render(hhmm);
+    render(day, month);
   }
 }
 let guard = false;
