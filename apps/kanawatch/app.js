@@ -209,7 +209,7 @@ function render(hhmm) {
   g.setColor(0, 0, 0);
     const whitecolor = color > 3;
     colors[color]();
-   // g.fillRect(0, 30, w, h);
+   g.fillRect(0, 30, w, h);
 
     g.setFont('Vector', 50);
     if (whitecolor) {
