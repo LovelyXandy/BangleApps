@@ -235,9 +235,9 @@ function drawMonthDay() {
   g.setFont('Vector', 20);
   g.setColor(1,1,1);
   g.setFontAlign(-1, -1, 0);
-  g.drawString(month, w, 112);
+  g.drawString(month, w-20, 112);
   g.setFontAlign(1, -1, 0);
-  g.drawString(day, 4, 112);
+  g.drawString(day, 20, 112);
 }
 
 function getPhoneme(k) {
