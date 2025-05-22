@@ -31,7 +31,7 @@
     let chime = function () {
         date = new Date();
         hour = date.getHours()
-        if(hour >= config.earliestHour )
+        if(hour >= config.earliestHour && hour < config.latestHour){ // stick an if to ke
         let hourFrac = Math.floor(date.getMinutes() / (60 / config.fractions_of_hour));
 
         if (hourFrac == 0) { // if it's an o'clock hour
@@ -44,7 +44,7 @@
         } else { // if it's a fraction of an hour
             fractionChime(hourFrac);
         }
-
+        }
         queueNextChime();
     };
 
