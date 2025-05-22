@@ -91,7 +91,13 @@
                 config.latestHour = v;
                 writeConfig();
             }
-        },
+        }, "Earliest Hour": {
+            value: config.earliestHour,
+            onchange: v => {
+                config.latestHour = v;
+                writeConfig();
+            }
+        }
     });
 
 })
