@@ -1,7 +1,6 @@
-/* Simple clock that appears in the widget bar. We update once per minute, but don't bother stopping
-if the */
+/* Simple clock that appears in the widget bar. We update once per minute. date has been added*/
 WIDGETS["wdclk"]={area:"tl",width:104/* g.stringWidth("00:00") */,draw:function() {
-  if (!this.width) return; // if not visible, return
+  if (!this.width) return; // if not visible, return (never triggered)
 g.reset().setFontCustom(atob("AAAAAAAAAAIAAAQCAQAAAd0BgMBdwAAAAAAAdwAB0RiMRcAAAERiMRdwAcAQCAQdwAcERiMRBwAd0RiMRBwAAEAgEAdwAd0RiMRdwAcERiMRdwAFAAd0QiEQdwAdwRCIRBwAd0BgMBAAABwRCIRdwAd0RiMRAAAd0QiEQAAAAAAAAAA="), 32, atob("BgAAAAAAAAAAAAAAAAYCAAYGBgYGBgYGBgYCAAAAAAAABgYGBgYG"), 512+9).setFontAlign(0,0);
   var time = require("locale").time(new Date(),1);
   const now = Date();
