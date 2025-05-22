@@ -1,5 +1,4 @@
-/* Simple clock that appears in the widget bar if no other clock
-is running. We update once per minute, but don't bother stopping
+/* Simple clock that appears in the widget bar. We update once per minute, but don't bother stopping
 if the */
 WIDGETS["wdclk"]={area:"tl",width:52/* g.stringWidth("00:00") */,draw:function() {
   if (!this.width) return; // if not visible, return
