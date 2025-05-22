@@ -12,8 +12,8 @@
         fractions_of_hour: 4, // 4 = 15min intervals, 6 = 10min intervals
         wait_ms: 500,
         meridian_buzz_ms: 50,
-        meridian_buzz_wait_ms: 300
-        latestHour: 22
+        meridian_buzz_wait_ms: 300,
+        latestHour: 22,
         earliestHour: 6
     }, require('Storage').readJSON("grandfatherclock.json", true) || {});
 
