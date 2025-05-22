@@ -4,7 +4,7 @@
 
     let config = Object.assign({
         draw_widget: false,
-        twelve_hour: true,
+        twelve_hour: false,
         swap_meridian: false,
         hour_attention_buzz_ms: 1000,
         hour_count_buzz_ms: 250,
