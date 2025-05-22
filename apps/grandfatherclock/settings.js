@@ -85,7 +85,13 @@
                 config.meridian_buzz_wait_ms = v;
                 writeConfig();
             }
-        }
+        }, "Latest Hour": {
+            value: config.latestHour,
+            onchange: v => {
+                config.latestHour = v;
+                writeConfig();
+            }
+        },
     });
 
 })
