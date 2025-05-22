@@ -13,6 +13,8 @@
         wait_ms: 500,
         meridian_buzz_ms: 50,
         meridian_buzz_wait_ms: 300
+        latestHour: 22
+        earliestHour: 6
     }, require('Storage').readJSON("grandfatherclock.json", true) || {});
 
     let writeConfig = function() {
