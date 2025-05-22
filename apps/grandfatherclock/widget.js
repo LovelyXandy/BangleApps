@@ -2,8 +2,8 @@
 
     // sensible defaults
     let config = Object.assign({
-        draw_widget: true,
-        twelve_hour: true,
+        draw_widget: false,
+        twelve_hour: false,
         swap_meridian: false,
         hour_attention_buzz_ms: 1000,
         hour_count_buzz_ms: 250,
@@ -11,7 +11,9 @@
         fractions_of_hour: 4, // 4 = 15min intervals, 6 = 10min intervals
         wait_ms: 500,
         meridian_buzz_ms: 50,
-        meridian_buzz_wait_ms: 300
+        meridian_buzz_wait_ms: 300,
+        earliestHour: 6,
+        latestHour: 22
     }, require('Storage').readJSON("grandfatherclock.json", true) || {}); // or, load the app settings file.
 
     WIDGETS["grandfatherclock"] = {
