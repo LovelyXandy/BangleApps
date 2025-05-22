@@ -6,7 +6,7 @@ g.reset().setFontCustom(atob("AAAAAAAAAAIAAAQCAQAAAd0BgMBdwAAAAAAAdwAB0RiMRcAAAE
   const now = Date();
   month = now.getMonth() + 1;
   day = now.getDate();
-  g.clearRect(this.x, this.y, this.x+this.width-1, this.y+23).drawString(time+ " "+month+'-'+day, this.x+this.width/2, this.y+12); // 5 * 6*2 = 60
+  g.clearRect(this.x, this.y, this.x+this.width-1, this.y+23).drawString(time+ " "+day+'.'+month, this.x+this.width/2, this.y+12); // 5 * 6*2 = 60
   // queue draw in one minute
   if (this.drawTimeout) clearTimeout(this.drawTimeout);
   this.drawTimeout = setTimeout(()=>{
