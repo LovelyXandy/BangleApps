@@ -3,7 +3,7 @@
     const configFile = "grandfatherclock.json";
 
     let config = Object.assign({
-        draw_widget: true,
+        draw_widget: false,
         twelve_hour: true,
         swap_meridian: false,
         hour_attention_buzz_ms: 1000,
