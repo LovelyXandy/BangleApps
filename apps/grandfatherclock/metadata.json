@@ -2,7 +2,7 @@
   "name": "Grandfather Clock Widget",
   "shortName":"Grandfather Clock",
   "version":"0.02",
-  "description": "A widget that chimes every fraction of an hour (similar to Chimer), and counts out the fractions and the o'clock hour.",
+  "description": "A widget that chimes every fraction of an hour (similar to Chimer), and counts out the fractions and the o'clock hour. Edited to add an option for overnight silence",
   "icon": "icon.png",
   "type": "widget",
   "tags": "widget",
